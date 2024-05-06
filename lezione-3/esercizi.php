@@ -8,20 +8,20 @@ echo strlen($seconda)
 . "\n";
 
 
-if (strlen($prima) > strlen($seconda)) {
-    echo strlen($prima) . " è maggiore di " . strlen($seconda). "\n";
-} else if (strlen($prima) == strlen($seconda)) {
+if (mb_strlen($prima) > mb_strlen($seconda)) {
+    echo mb_strlen($prima) . " è maggiore di " . mb_strlen($seconda). "\n";
+} else if (mb_strlen($prima) == mb_strlen($seconda)) {
     echo "Le due stringhe sono uguali";
 } else {
-    echo strlen($seconda) . " è maggiore di " . strlen($prima) . "\n";
+    echo mb_strlen($seconda) . " è maggiore di " . mb_strlen($prima) . "\n";
 }
 
 //2
 
 $str = "Ciao sono io amore mio";
-$str_maiuscola = strtoupper($str);
+$str_maiuscola = mb_strtoupper($str);
 
-//echo strtoupper($str) . "\n";
+//echo mb_strtoupper($str) . "\n";
 echo $str_maiuscola . "\n";
 
 //3 
